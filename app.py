@@ -34,7 +34,6 @@ note_text = st.text_area("Enter your note here:", "")
 
 if st.button("Summarize"):
     if note_text:
-        st.write("Summarizing...")
         summary = summarize_note(note_text)
         st.subheader("Summary:")
         st.write(summary)
